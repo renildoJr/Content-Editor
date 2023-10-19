@@ -7,22 +7,26 @@
     <title>Content Editor | Build 1.0</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/5034295430.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="content-editor_container">
         <div class="content-editor">
             <nav class="toolbar">
-                <button class="btn-toolbar" value="h1">H1</button>
-                <button class="btn-toolbar" value="strong">Bold</button>
-                <button class="btn-toolbar" value="p">Paragraph</button>
-                <button class="btn-toolbar" value="i">Italic</button>
-                <button class="btn-postion" onclick="changeElementPosition('left')" value="center">left</button>
-                <button class="btn-postion" onclick="changeElementPosition('center')" value="center">center</button>
-                <button class="btn-postion" onclick="changeElementPosition('right')" value="center">rigth</button>
+                <button class="btn-toolbar btn-text" title="Transforms the text into level 2 header" value="h2"><i class="fa-solid fa-heading"></i></button>
+                <button class="btn-toolbar btn-text" title="Bold text" value="strong"><i class="fa-solid fa-bold"></i></button>
+                <button class="btn-toolbar btn-text" title="Paragraph" value="p"><i class="fa-solid fa-paragraph"></i></button>
+                <button class="btn-toolbar btn-text" title="Italic" value="i"><i class="fa-solid fa-italic"></i></button>
+                <button class="btn-toolbar btn-text-position" title="align text to the left" onclick="changeElementPosition('left')"><i class="fa-solid fa-align-left"></i></button>
+                <button class="btn-toolbar btn-text-position" title="align text to the center" onclick="changeElementPosition('center')"><i class="fa-solid fa-align-center"></i></button>
+                <button class="btn-toolbar btn-text-position" title="align text to the right" onclick="changeElementPosition('right')"><i class="fa-solid fa-align-right"></i></button>
+                <button class="btn-toolbar btn-upload" title="Add image" id="uploadButton"><i class="fa-solid fa-image"></i></button>
+                <input type="file" id="image_upload" style="display: none;" accept="image/jpeg, image/png, image/jpg">
             </nav>
             <div class="content" contenteditable spellcheck="false"></div>
-            <div class="counter">character <span id="count">0</span></div>
+            <div class="counter">characters <span id="count">0</span></div>
         </div>
     </div>
 </body>
 </html>
+

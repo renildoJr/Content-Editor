@@ -34,12 +34,13 @@
 }
 
 .content-editor .content {
-    min-height: 100px;
+    min-height: 300px;
     margin: 1rem;
     padding: 10px;
     border: 1px solid #ccc;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .content-editor .content *:hover,
