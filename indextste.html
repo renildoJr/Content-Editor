@@ -1,0 +1,17 @@
+<div contenteditable="true" id="myEditableDiv">Seu texto aqui</div>
+
+<script>
+  // Obtém uma referência para o elemento contenteditable
+  var editableDiv = document.getElementById("myEditableDiv");
+
+  // Coloca o cursor no final do texto
+  editableDiv.focus();
+  var textNode = editableDiv.firstChild;
+  var range = document.createRange();
+  range.setStart(textNode, textNode.length);
+  range.setEnd(textNode, textNode.length);
+
+  var selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(range);
+</script>

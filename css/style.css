@@ -38,9 +38,12 @@
     margin: 1rem;
     padding: 10px;
     border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
 }
 
-.content-editor .content *:hover {
+.content-editor .content *:hover,
+.content-editor .content .selected_element {
     border: 1px dotted #6a4ee9;
 }
 
