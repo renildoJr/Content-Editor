@@ -5,7 +5,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.content-editor_container {
+.container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -15,13 +15,13 @@
     margin-top: 200px; 
 }
 
-.content-editor {
+.editor {
     max-width: 800px;
     width: 100%;
     border: 1px solid #ccc;
 }
 
-.content-editor .toolbar {
+.editor__toolbar {
     background: #363636;
     padding: 1rem;
     display: flex;
@@ -29,14 +29,14 @@
     flex-wrap: wrap;
 }
 
-.content-editor .toolbar .btn-toolbar {
+.editor__toolbar .btn {
     padding: 5px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.content-editor .content {
+.editor__content {
     min-height: 300px;
     margin: 1rem;
     padding: 10px;
@@ -46,16 +46,16 @@
     overflow: hidden;
 }
 
-.content-editor .content *:hover,
-.content-editor .content .selected_element {
+.editor__content *:hover,
+.editor__content .selected--element {
     border: 1px dotted #6a4ee9;
 }
 
-.content-editor .counter {
+.editor__counter {
     text-align: right;
     padding: 0 1rem 1rem;
 }
 
-.content-editor .counter #count {
+.editor__counter #count {
     font-weight: 700;
 }

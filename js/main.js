@@ -1,9 +1,7 @@
 'use strict';
 
-console.log(formData)
-
 const btnToolbar = document.querySelectorAll(".btn-text");
-const content = document.querySelector('.content');
+const content = document.querySelector('.editor__content');
 const counter = document.getElementById("count");
 const uploadButton = document.getElementById("uploadButton");
 let selectedElement = null;
